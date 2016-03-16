@@ -7,7 +7,7 @@
 	/* Common Style */
 	*{
 		margin: 0;padding: 0;
-		word-wrap:break-all;
+		word-wrap:break-word;
 	}
 	.wrap,.t-logo,.s-logo,.main,.s-logo div{
 		border: 1px solid #999;
@@ -60,46 +60,37 @@
 	.wrap{
 		margin: 20px;
 		background: #eee;
+		overflow-x: hidden;
+		overflow-y: auto;
 	}
 	.t-logo{
 		float: left;margin: 20px;
 		width: 200px;
-	}
-	.t-main{
-		margin: 20px;
-	}
-	.t-main img{
-		border: 1px solid #999;
+		position: relative;
 	}
 	.t-term{
-		float: right;
-		width: 60px;
-		overflow: hidden;
-		white-space: nowrap;
-		text-overflow: ellipsis;
+		position: absolute;top: 20px;left: 120px;right: 20px;
+	}
+	.t-logo div,.s-logo div{
+		margin: 20px;
+		border: 1px solid #999;
+		width: 80px;height: 80px;
 	}
 	.s-logo{
 		float: right;margin: 20px;
 		width: 120px;
 	}
-	.s-logo div{
-		margin: 20px;
-		width: 80px;height: 80px;
-	}
 	.main{
 		margin: 20px 160px 20px 240px;
 		padding: 20px;
-		overflow: hidden;
 	}
 	</style>
 </head>
 <body>
 	<div class="wrap">
 		<div class="t-logo">
-			<div class="t-main">
-				<img src="Lizhg.jpg" height="80" width="80">
-				<p class="t-term">Web@BD</p>
-			</div>
+			<div><img src="Lizhg.jpg" height="80" width="80"></div>
+			<p class="t-term">Web@BD</p>
 		</div>
 		<div class="s-logo">
 			<div><img src="Lizhg.jpg" height="80" width="80"></div>
