@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ife-1.4.1</title>
+	<style>
+	.wrap{
+		position: absolute;left: 50%;top: 50%;
+		-webkit-transform: translate(-50%,-50%);
+		-ms-transform: translate(-50%,-50%);
+		-o-transform: translate(-50%,-50%);
+		transform: translate(-50%,-50%);
+		overflow: hidden;
+		width: 400px;height: 200px;
+		background-color: #ccc;
+	}
+	/* 此处也可使用背景色+宽高+圆角边框来实现 */
+	.circle{
+		width: 0;height: 0;
+		border: 50px solid #fc0;border-radius: 50%;
+	}
+	.lt{
+		position: absolute;left: -50px;top: -50px;
+	}
+	.rb{
+		position: absolute;right: -50px;bottom: -50px;
+	}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="circle lt"></div>
+		<div class="circle rb"></div>
+	</div>
+</body>
+</html>
